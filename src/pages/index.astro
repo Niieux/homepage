@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Niieux — The future of GNU/Linux',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,77 +25,55 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
+        text: 'Download now',
+        href: 'https://github.com/Niieux/niieux-build',
         target: '_blank',
         icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'GitHub', href: 'https://github.com/Niieux' },
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
+      A all new GNU/Linux <span class="hidden xl:inline">operating system</span>
+      <span class="text-accent dark:text-white"></span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+        <span class="font-semibold">Niieux</span> <span class="hidden xl:inline">is a Debian 13-based Linux distro designed for beginners and developers, featuring a modified GNOME desktop, no bloatware, and Flatpak support.</span>
     </Fragment>
   </Hero>
-
-  <!-- Note Widget ******************* -->
-
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
     tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    title="What you get with Niieux"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Limitless Customizations',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Niieux comes with a Theme Switcher app which lets you effortlessly customize your desktop experience, it allows you to pick between new looks to make your system feel more home.',
+        icon: 'tabler:palette',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Easy to use',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          'Easy to use for everyone with an optimized GNOME Desktop which allows everyone to work easily with the click of a button.',
         icon: 'tabler:components',
       },
       {
-        title: 'Best Practices',
+        title: 'Lightning Fast',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Niieux is tailored for the best performance possible while trying not to compromise the look and feel of the operating system.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Open Source',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+          'Niieux is completely open-source under the GPL 3.0 license to allow you to explore, modify and contribute.',
         icon: 'tabler:bulb',
       },
     ]}
