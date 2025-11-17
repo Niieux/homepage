@@ -116,15 +116,11 @@ const getStyle = ({
   height,
   aspectRatio,
   layout,
-  objectFit,
-  objectPosition = 'center',
   background,
 }: {
   width?: number;
   height?: number;
   aspectRatio?: number;
-  objectFit?: string;
-  objectPosition?: string;
   layout?: string;
   background?: string;
 }) => {
@@ -341,8 +337,6 @@ export async function getImagesOptimized(
         width: width,
         height: height,
         aspectRatio: aspectRatio,
-        objectFit: objectFit,
-        objectPosition: objectPosition,
         layout: layout,
       })}${style ?? ''}`,
       ...rest,
