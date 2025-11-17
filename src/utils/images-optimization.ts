@@ -127,10 +127,15 @@ const getStyle = ({
   layout?: string;
   background?: string;
 }) => {
-  const styleEntries: Array<[prop: string, value: string | undefined]> = [
-    ['object-fit', objectFit],
-    ['object-position', objectPosition],
-  ];
+  const styleEntries: Array<[prop: string, value: string | undefined]> = [];
+
+  // Only add object-fit and object-position if explicitly provided
+  if (objectFit) {
+    styleEntries.push(['object-fit', objectFit]);
+  }
+  if (objectPosition && objectFit) {
+    styleEntries.push(['object-position', objectPosition]);
+  }
 
   // If background is a URL, set it to cover the image and not repeat
   if (background?.startsWith('https:') || background?.startsWith('http:') || background?.startsWith('data:')) {
