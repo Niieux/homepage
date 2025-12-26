@@ -12,6 +12,6 @@ export const headerData = {
 
 export const footerData = {
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo"> Arthelokyo</a> · All rights reserved.
+    Made by <a class="text-blue-600 underline dark:text-muted" href="https://shonubot.github.io/"> Kavish Advani</a> · All rights reserved.
   `,
 };
