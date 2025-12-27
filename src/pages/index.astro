@@ -211,7 +211,14 @@ const metadata = {
         target: '_blank',
         icon: 'tabler:download',
       },
-    ]}
   >
+    <Fragment slot="title">
+      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Install Niieux <br class="hidden md:inline" />
+    </Fragment>
   </CallToAction>
 </Layout>
+
