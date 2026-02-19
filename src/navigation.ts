@@ -9,3 +9,5 @@ export const headerData = {
   ],
   actions: [{ text: 'Download', href: 'https://github.com/Niieux/niieux-build', target: '_blank' }],
 };
+export const footerData = {
+};
